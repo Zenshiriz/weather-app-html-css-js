@@ -1,0 +1,86 @@
+/* flex  */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+/* text colors */
+.text-white{
+   color: #fff;
+}
+.text-gray-300{
+    color:#d1d5db;
+}
+.text-cyan-400{
+    color: #22d3ee;
+}
+.text-amber-400{
+    color: rgb(251 191 36);
+}
+/* positions */
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+/* width & height */
+
+.w-full{
+    width: 100%;
+}
+.h-full{
+    height: 100%;
+}
+.w-screen{
+    width: 100vw;
+}
+
+/* padding */
+.p-3{
+    padding: 12px;
+}
+
+/* margin */
+.m-auto{
+    margin: auto auto;
+}
+.ml-2{
+    margin-left: 0.5rem;
+}
+
+/* text aligns */
+.text-center{
+    align-items: center;
+}
+
+/* font weight */
+.font-semibold{
+    font-weight: 600;
+}
+
+/* line height */
+.leading-none	{
+    line-height: 1;
+}
+.text-base{
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */   
+}
+
+/* pointers */
+.cursor-pointer{
+    cursor: pointer;
+}
