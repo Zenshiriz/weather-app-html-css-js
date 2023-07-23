@@ -5,7 +5,7 @@ const mainEl = document.getElementById('main');
 
 
 
-// getWeather("mangalore")
+getWeather(localStorage.getItem("location"))
 
 function getWeather(value) {
   mainEl.innerHTML = ` <div class="spinner-container">
@@ -15,6 +15,7 @@ function getWeather(value) {
 
   try {
     const url = `http://api.weatherapi.com/v1/current.json?key=f69943e3d45549fcafc44246231302&q=${value? value :searchInputValue}&aqi=no`;
+  
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -94,6 +95,9 @@ function getWeather(value) {
          </div>
        </div>
      </div>`
+     if(searchInputValue){
+      localStorage.setItem("location",JSON.stringify(searchInputValue))
+    }
       })
       .catch((error)=>{
         mainEl.innerHTML = `  <p class="error-message">
