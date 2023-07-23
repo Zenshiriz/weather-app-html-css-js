@@ -10,6 +10,7 @@ body{
     background-size: cover;
     background-position: center;
     font-family: inter;
+    user-select: none;
 }
 
 .header{

@@ -4,8 +4,12 @@ const searchBtnEl = document.getElementById("Search-btn");
 const mainEl = document.getElementById('main');
 
 
+if(localStorage.getItem("location")){
 
-getWeather(localStorage.getItem("location"))
+  getWeather(localStorage.getItem("location"))
+}
+
+
 
 function getWeather(value) {
   mainEl.innerHTML = ` <div class="spinner-container">
